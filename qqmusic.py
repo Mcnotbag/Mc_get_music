@@ -23,9 +23,9 @@ filename = "C400{}.m4a".format(songmid)
 # 获取歌曲的guid
 t = datetime.utcnow().microsecond // 1000
 guid = math.trunc(2147483647 * random.random()) * t % 10000000000
-cookies = {
-    "pgv_pvid": str(guid),
-}
+# cookies = {
+#     "pgv_pvid": str(guid),
+# }
 cookie = "pgv_pvi=3962760192; pgv_si=s8593839104; pgv_info=ssid=s5461457355; pgv_pvid=3904984604; ts_uid=6149880823; _qpsvr_localtk=0.9352821208932514; yq_index=0; player_exist=1; qqmusic_fromtag=66; yqq_stat=0; ptisp=ctc; ptui_loginuin=332342731; pt2gguin=o0332342731; uin=o0332342731; skey=@ysRvMUuDo; RK=3d7IX9PUS2; ptcz=425e8d63f5f9a853467c0fc4e882817bd2140f7fd2f667289b30cfb61ea7e34c; luin=o0332342731; lskey=000100001dd6e648d58d25bed278aaae8845af6bf44a868066447ff43e4e65f6d6e8e0e1f943a4b8f766976c; p_uin=o0332342731; pt4_token=qIA5MWWDzEAuJB0PTzPYHlzFRj0-KQ89hBosRL9gc0s_; p_skey=uwocSSxd*Z2ZeraV0REGU7rfNNMz3IBUpkpHejBiQCw_; p_luin=o0332342731; p_lskey=00040000959bc83e6ea3321e3cf1b3d9cba87a3ff989c86e1db983afb9ca6ad82caef1577f6beb84beb9531a; ts_refer=xui.ptlogin2.qq.com/cgi-bin/xlogin; ts_last=y.qq.com/n/yqq/song/003tlSye3PpqAg.html; yplayer_open=1"
 cookie = {i.split("=")[0]:i.split("=")[1] for i in cookie.split("; ")}
 print(cookie)

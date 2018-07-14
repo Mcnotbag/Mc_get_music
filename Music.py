@@ -4,7 +4,6 @@ import codecs
 import os
 from Crypto.Cipher import AES
 
-
 class WangYiYun():
 
     def __init__(self):

@@ -2,7 +2,6 @@
 import requests
 import Music
 
-
 first1 = '{"ids":"[499008025]","br":128000,"csrf_token":""}'
 
 first2 = '{"logs":"[{\"action\":\"activeweb\",\"json\":{\"is_organic\":0,\"url\":\"https://music.163.com/#/search/m/?id=2116&s=%E9%99%88%E5%A5%95%E8%BF%85-%E4%BB%BB%E6%88%91%E8%A1%8C&type=1\",\"source\":\"https://www.baidu.com/link?url=-BJoWJaVofxO7h5dfkfj_PH052P_QzZv3Z3GtYa7c1K&wd=&eqid=a1ba6e6e00024eb3000000065b497b83\"}}]","csrf_token":""}'
